@@ -28,7 +28,7 @@ var service = server.listen(7777,function(req,res){
 });
 
 if(service){
-  console.log("Application running on port 777");
+  console.log("Application running on port 7777");
 }
 else{
   console.log("Error!!!");
