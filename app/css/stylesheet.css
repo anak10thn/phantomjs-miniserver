@@ -1,0 +1,49 @@
+.song{
+  position: relative;
+    width: 200px;
+    height: 190px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.squidheart {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.squidheart:before,
+.squidheart:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background: #bc0303;
+    -moz-border-radius: 100px 100px 0 0;
+    border-radius: 800px 800px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.squidheart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
