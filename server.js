@@ -7,7 +7,9 @@ function load_page(req,res){
 		read = fs.read('./app/index.html');
 	}
 	else {
-		read = fs.read("./app"+path);
+    if(fs.exists("./app"+path)){
+		  read = fs.read("./app"+path);
+    }
 	}
 	res.write(read);
 }
@@ -23,4 +25,11 @@ var service = server.listen(7777,function(req,res){
 
   	res.close();
 
-})
+});
+
+if(service){
+  console.log("Application running on port 777");
+}
+else{
+  console.log("Error!!!");
+}
