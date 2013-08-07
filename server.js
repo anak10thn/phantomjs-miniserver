@@ -7,9 +7,9 @@ function load_page(req,res){
 		read = fs.read('./app/index.html');
 	}
 	else {
-    if(fs.exists("./app"+path)){
-		  read = fs.read("./app"+path);
-    }
+    		if(fs.exists("./app"+path)){
+			read = fs.read("./app"+path);
+    		}
 	}
 	res.write(read);
 }
